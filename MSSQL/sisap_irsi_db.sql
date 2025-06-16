@@ -61,3 +61,7 @@ SELECT * FROM Estudiantes;
 BACKUP DATABASE [sisap_irsi_db]
 TO DISK = 'C:\backups\sisap_irsi_db.bak'
 WITH FORMAT, MEDIANAME = 'SisapBackups', NAME = 'Full Backup';
+
+
+INSERT INTO Usuarios (username, password_hash, role)
+VALUES ('consultor@gmail.com', '$2b$12$YQ5Mq648tYdJpwmUQYXFFe8sztPQdxwNcsGLIRyHQ1uQ5WcFETHMG', 'consulta');
